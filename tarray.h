@@ -8,6 +8,13 @@
 	John Dolan			Ohio University 
 ********************************************************************/
 
+	/**
+	*\file tarray.h
+	*This file defines the tarray class.
+	*\author John Dolan (ASHLEY SMITH)
+	*\note This is the file that contains all of the class information for the tarray class. 
+	*/
+
 #include<iostream>
 
 template<class T>

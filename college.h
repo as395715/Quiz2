@@ -5,6 +5,13 @@
 //10/8/2015
 //********************
 
+	/**
+	*\file college.h
+	*This file defines the college class.
+	*\author Matthew Aberegg (ASHLEY SMITH)
+	*\note This is the file that contains all of the class information for the college class. 
+	*/
+	
 #include <iostream>
 #include <fstream>
 #include <string>

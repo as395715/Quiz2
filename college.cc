@@ -4,6 +4,16 @@
 //CS 2401
 //10/8/2015
 //********************
+
+
+	/**
+	*\file college.cc
+	*This file contains all of the functions of the college class.
+	*\author Matthew Aberegg (ASHLEY SMITH)
+	*\implements <college.h>
+	*/
+	
+	
 #include "college.h"
 #include<cstdlib>
 #include<iostream>
@@ -69,6 +79,11 @@ College& College::operator =(const College& other){
 	return * this;
 }
 
+
+/**
+* Adds a course to the college class.
+* @param course The course that needs to be added
+**/
 void College::add(course& c){
 	node * previous;
 	node * cursor;
@@ -144,7 +159,10 @@ void College::display(std::ostream& outs){
 	outs << "\n";
 }
 
-
+/**
+* Calculates the amount of credit hours
+* @return the double: amount of hours
+**/
 double College::hours(){
 	node * ptr;
 	ptr = head;
@@ -156,6 +174,10 @@ double College::hours(){
 return hours;
 }
 
+/**
+* Calculates the students gpa based on credit hours and grades
+* @return the double: gpa calculation
+**/
 double College::gpa(){
 	node * ptr;
 	ptr = head;

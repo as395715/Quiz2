@@ -3,6 +3,14 @@
 	course.
 		John Dolan		School of EECS		Summer2013
 **************************************************************************/
+
+	/**
+	*\file course.cc
+	*This file contains all of the functions of the course class.
+	*\author John Dolan (ASHLEY SMITH)
+	*\implements <course.h>
+	*/
+
 #include "course.h"
 #include<cstdlib>
 #include<iostream>

@@ -12,6 +12,13 @@
 	John Dolan			Spring 2015
 **********************************************************/
 
+	/**
+	*\file collegemain.cc
+	*This file contains all of the functions and definitions of the collegemain class.
+	*\author John Dolan (ASHLEY SMITH)
+	*\note This is the collegemain file for the college project.
+	*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
