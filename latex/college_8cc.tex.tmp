@@ -1,0 +1,15 @@
+\hypertarget{college_8cc}{}\section{college.\+cc File Reference}
+\label{college_8cc}\index{college.\+cc@{college.\+cc}}
+{\ttfamily \#include \char`\"{}college.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+Include dependency graph for college.\+cc\+:
+% FIG 0
+
+
+\subsection{Detailed Description}
+This file contains all of the functions of the college class. \begin{DoxyAuthor}{Author}
+Matthew Aberegg (A\+S\+H\+L\+EY S\+M\+I\+TH) $>$ 
+\end{DoxyAuthor}

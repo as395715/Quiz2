@@ -1,16 +1,27 @@
-all : college doc
+all: build doczip
 
-build : college
-	
-college : collegemain.o course.o college.o
-	g++ collegemain.o course.o college.o
-collegemain.o : collegemain.cc college.h course.h
-	g++ -c collegemain.cc
-course.o : course.cc course.h node.h tarray.h
-	g++ -c course.cc
-college.o : college.cc college.h
+build: college.o course.o collegemain.o
+	g++ college.o course.o collegemain.o -o build
+
+college.o: college.cc college.h
 	g++ -c college.cc
-clean :
-	rm -rf *.o *.out *.core *~ core *.tar.gz html latex
-doc : *.cc *.h
-	doxygen
+
+course.o: course.cc course.h
+	g++ -c course.cc
+
+collegemain.o: collegemain.cc course.h college.h node.h
+	g++ -c collegemain.cc
+
+clean:
+	-rm *.o build
+	-rm -rf html latex
+
+myexe:
+
+doc: college.cc course.cc collegemain.cc college.h course.h tarray.h node.h
+	doxygen -g doc.conf
+	doxygen doc.conf
+
+doczip:
+	tar -cvzf archive.tar.gz college.cc course.cc collegemain.cc college.h course.h tarray.h node.h Makefile
+
